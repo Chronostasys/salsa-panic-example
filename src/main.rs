@@ -53,7 +53,7 @@ lazy_static::lazy_static!{
             map:m.clone()
         });
         map.insert(2,DependencyNode{
-            children:vec![0],
+            children:vec![0], // if change this line to `children:vec![],` panic disappear
             value:2,
             id:2,
             map:m.clone()
